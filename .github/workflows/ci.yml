@@ -72,7 +72,7 @@ jobs:
             packages: ""
 
           - os: ubuntu-24.04
-            cxx: "g++-12"
+            cxx: "g++"
             link: "static"
             optimization: "size"
             assert: "ndebug"
@@ -83,7 +83,7 @@ jobs:
             llvm: ""
             secp256k1: "--build-secp256k1"
             zmq: "--build-zmq"
-            cc: "gcc-12"
+            cc: "gcc"
             flags: "-Os -fPIE"
             options: "--enable-isystem"
             packager: "apt"
